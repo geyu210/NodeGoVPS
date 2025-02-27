@@ -9,6 +9,14 @@
 1. 安装Python依赖
 
    ~~~shell
+   git clone path/to/NodeGo
+   
+   sudo apt update
+   sudo apt upgrade
+   sudo apt install python3 python3-pip python3-venv
+   
+   cd path/to/NodeGo
+   python3 -m venv myenv
    pip install requests
    ~~~
 

@@ -1,6 +1,11 @@
 
 ./accessToken.txt
 accessToken.txt
+
+# 忽略虚拟环境目录
+myenv/
+
+
 # Logs
 logs
 *.log

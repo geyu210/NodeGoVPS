@@ -4,6 +4,18 @@ import logging
 from time import sleep
 import requests
 import random
+import jwt
+
+# 读取令牌
+with open('accessToken.txt', 'r') as file:
+    token = file.read().strip()
+
+# 尝试解码令牌
+try:
+    decoded = jwt.decode(token, options={"verify_signature": False})
+    print("令牌有效:", decoded)
+except jwt.InvalidTokenError as e:
+    print("令牌无效:", str(e))
 # 常量
 bearToken = open('accessToken.txt', 'r', encoding='utf-8').read()
 baseURL= "https://nodego.ai/api"
