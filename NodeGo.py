@@ -9,7 +9,6 @@ import jwt
 # 读取令牌
 with open('accessToken.txt', 'r') as file:
     token = file.read().strip()
-
 # 尝试解码令牌
 try:
     decoded = jwt.decode(token, options={"verify_signature": False})
@@ -17,7 +16,8 @@ try:
 except jwt.InvalidTokenError as e:
     print("令牌无效:", str(e))
 # 常量
-bearToken = open('accessToken.txt', 'r', encoding='utf-8').read()
+with open('accessToken.txt', 'r') as file:
+    bearToken = file.read().strip()  # 使用strip()去除多余字符
 baseURL= "https://nodego.ai/api"
 
 # User-Agent

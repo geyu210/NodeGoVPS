@@ -13,7 +13,7 @@
    
    sudo apt update
    sudo apt upgrade
-   sudo apt install python3 python3-pip python3-venv
+   sudo apt install python3 python3-pip python3-venv PyJWT
    
    cd path/to/NodeGo
    python3 -m venv myenv
