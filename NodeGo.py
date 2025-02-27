@@ -3,11 +3,20 @@ import time
 import logging
 from time import sleep
 import requests
-
+import random
 # 常量
 bearToken = open('accessToken.txt', 'r', encoding='utf-8').read()
 baseURL= "https://nodego.ai/api"
-UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+
+# User-Agent
+
+
+user_agents = [
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+]
+
+UserAgent = random.choice(user_agents)
+
 last_ping_timestamp = 0
 def getUser():
     try:
