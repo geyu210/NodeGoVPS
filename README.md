@@ -20,7 +20,7 @@
 
 2. 配置accessToken.txt
 
-   进入https://app.nodego.ai/r/NODE81DCE311132B界面，F12打开控制台，将accessToken的值复制到accessToken.txt，注意不到带有引号
+   进入https://app.nodego.ai/r/NODE81DCE311132B 界面，F12打开控制台，将accessToken的值复制到accessToken.txt，注意不到带有引号
 
    ![image-20250227153253912](https://typora-mine.oss-cn-beijing.aliyuncs.com/typoraimage-20250227153253912.png)
 
